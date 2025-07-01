@@ -338,7 +338,7 @@
 
         /* Payment Section */
         .payment-section {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(35, 33, 33, 0.95);
             border-radius: 20px;
             padding: 40px;
             margin: 20px auto;
@@ -354,7 +354,7 @@
 
         .payment-method {
             padding: 20px;
-            background: #f8f9fa;
+            background:rgb(0, 0, 0);
             border: 2px solid #ddd;
             border-radius: 10px;
             cursor: pointer;
@@ -364,12 +364,12 @@
 
         .payment-method:hover {
             border-color: #667eea;
-            background: #e3f2fd;
+            background:rgb(0, 0, 0);
         }
 
         .payment-method.selected {
             border-color: #667eea;
-            background: #e3f2fd;
+            background:rgb(0, 0, 0);
         }
 
         .payment-method i {
@@ -723,7 +723,7 @@
                             <i class="fas fa-map-marker-alt" style="font-size: 2rem; color: #667eea; margin-bottom: 10px;"></i>
                             <h4>In-Person Consultation</h4>
                             <p>Visit our office in Kolkata</p>
-                            <p><strong>₹2,000</strong></p>
+                            <p><strong>₹1,500</strong></p>
                         </div>
                     </div>
                 </div>
@@ -771,7 +771,7 @@
                     <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; text-align: center;">
                         <h4 style="color: #333; margin-bottom: 10px;">Payment Summary</h4>
                         <p style="font-size: 1.2rem; color: #667eea;"><strong>Amount: <span id="paymentAmount">₹1,500</span></strong></p>
-                        <p style="color: #666; margin-top: 10px;">Consultation Fee (60 minutes)</p>
+                        <p style="color: #666; margin-top: 10px;">Consultation Fee (150 minutes)</p>
                     </div>
                 </div>
                 <div style="display: flex; gap: 15px;">
@@ -849,12 +849,12 @@
             <span class="close" onclick="closeModal()">&times;</span>
             <h3 style="color: #333; margin-bottom: 20px;">Complete Your Payment</h3>
             <div id="paymentQRCode" style="text-align: center; margin: 20px 0;">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=yourupi@id&pn=DivineAstrology&am=1500&cu=INR" alt="UPI QR Code" style="width: 200px; height: 200px;">
+                <img src="upi1500.jpg" alt="UPI QR Code" style="width: 200px; height: 200px;">
                 <p style="margin-top: 15px; color: #333;">Scan this QR code with any UPI app</p>
             </div>
             <div id="paymentDetails" style="text-align: center; margin: 20px 0;">
                 <p style="color: #333;">Or send payment to:</p>
-                <p style="font-weight: bold; color: #667eea;">yourupi@id</p>
+                <p style="font-weight: bold; color: #667eea;">rudranilgoswami3@oksbi</p>
                 <p style="color: #333;">Amount: <span id="modalAmount">₹1,500</span></p>
             </div>
             <button class="btn" onclick="verifyPayment()" style="width: 100%;">I've Made the Payment</button>
